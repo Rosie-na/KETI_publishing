@@ -169,6 +169,10 @@ header .gnb-wrap .gnb > li {
     margin-right: 50px;
 }
 
+header .gnb-wrap .gnb > li.login_mobile {
+    display: none;
+}
+
 header .gnb-wrap .gnb > li > a{
     display: flex;
     justify-content: center;
@@ -1248,6 +1252,7 @@ header .gnb-wrap .util {
     font-weight: 700;
     line-height: 31px;
     color: var(--main);
+    width: 10%;
 }
 .data-wrapper .inner .data_set .data_set_box .data_set_content{
     text-align: left;
@@ -1255,6 +1260,10 @@ header .gnb-wrap .util {
     font-weight: 400;
     line-height: 32px;
     color: var(--gray-800);
+    width: 90%;
+}
+.data-wrapper .inner .data_set .data_set_box .data_set_content img{
+    width: 100%;
 }
 .data-wrapper .inner .data_set .data_set_box .data_set_content ul{
     list-style-type: disc;
@@ -1397,6 +1406,9 @@ header .gnb-wrap .util {
         margin-right: 0px;
         background-color: #ffffff;
         border-bottom: 1px solid var(--gray-300);
+    }
+    header .gnb-wrap .gnb > li.login_mobile {
+        display: block;
     }
     header .gnb-wrap .gnb > li:last-child{
         border-bottom: 0px solid;
@@ -1773,11 +1785,14 @@ header .gnb-wrap .util {
     .data-wrapper .inner .data_set .data_set_box .data_set_title{
         font-size: 20px;
         line-height: 26px;
+        width: 100%;
     }
     .data-wrapper .inner .data_set .data_set_box .data_set_content{
         font-size: 15px;
         line-height: 27px;
+        width: 100%;
     }    
+
     .data-wrapper .inner .data_set .data_set_box .data_set_content ul > li > ul > li{
         font-size: 14px;
         line-height: 28px;
